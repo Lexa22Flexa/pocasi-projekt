@@ -8,7 +8,7 @@
 
 <?php
     foreach ($bundesland as $row) {
-        $imgMap = array(
+        /*$imgMap = array(
           "src" => base_url("obrazky/mapy/".$row->Map),
           "alt" => "mapa zeme",
           "class" => "img-fluid w-100",
@@ -17,7 +17,8 @@
             "src" => base_url("obrazky/vlajky/Flag_of_".$row->id.".png"),
             "alt" => "mapa zeme",
             "class" => "img-fluid w-100",
-        );
+        );*/
+        
         ?>
         <h1 class="mt-1 mb-2"><?= $row->name ?></h1>
         <?php

@@ -1,6 +1,13 @@
 <?php
 
-namespace Config;
+namespace Config; 
+
+// php spark => dají se pomocí něho dělat skripty, které se dají spustit přes cmd; ten command je něco jako controller => dokáže nastavovat modely, mazat...
+
+// php spark make:command NazevCommandu
+
+// HrdinaGPT
+
 
 use CodeIgniter\Config\BaseConfig;
 
@@ -16,7 +23,7 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = 'http://localhost/helmichova-alexa/pocasi-projekt/';
+    public string $baseURL = 'http://localhost/helmichova/pocasi-projekt/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
