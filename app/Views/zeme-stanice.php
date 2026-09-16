@@ -11,7 +11,7 @@ use App\Models\Bundesland;
 //<?= $dat?
 ?>
 
-<h1>Přehled meteorologických stanic ve spolkové zemi ---název země---</h1>
+<h1>Přehled meteorologických stanic ve spolkové zemi</h1>
 
 
 <div class="row">

@@ -26,14 +26,18 @@
 ?>
     <div class="row">
         <div class="col-lg-6">
-            <?= img($imgVlajka); ?>
+            
             <h1 class="p-1"><?= anchor("zeme-stanice/".$row->id, "Stanice") ?></h1>
         </div>
 
         <div class="col-lg-6">
-            <?= img($imgMap); ?>
+            
         </div>
     </div>
 
 
 <?= $this->endSection(); ?>
+
+
+<!--img($imgMap);
+ img($imgVlajka);-->
