@@ -1,4 +1,4 @@
-<?php //php spark make:command Delete
+<?php //php spark make:command Delete;
 
 namespace App\Commands;
 
@@ -54,7 +54,7 @@ class Delete extends BaseCommand
      *
      * @param array $params
      */
-    public function run(array $params) //sem se píše samotný kód
+    public function run(array $params) //sem se píše samotný kód 
     {
         //
     }

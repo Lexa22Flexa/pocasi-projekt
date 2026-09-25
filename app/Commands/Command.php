@@ -5,6 +5,9 @@ namespace App\Commands;
 use CodeIgniter\CLI\BaseCommand;
 use CodeIgniter\CLI\CLI;
 
+/* /usr/bin/php /var/www/navody/public_html/ucebny/index rozvrh1 > /var/log/ucebny1.log             => máme taky zapsat do logu :C */
+
+
 class Command extends BaseCommand
 {
     /**

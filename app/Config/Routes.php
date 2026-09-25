@@ -11,3 +11,4 @@ $routes->get('zeme-stanice/(:num)', 'Main::zeme/$1');
 $routes->get('vsechny-stanice', 'Main::vsechnyStanice');
 $routes->get('stanice/(:num)', 'Main::stanice/$1');
 $routes->get('mapkaVlajkazeme/(:num)', 'Main::udajeZeme/$1');
+$routes->post('item/delete', 'Item::delete/$1');

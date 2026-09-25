@@ -2,24 +2,28 @@
 
 namespace App\Controllers;
 
-use App\Controllers\BaseController;
-use CodeIgniter\HTTP\ResponseInterface;
+use App\Models\Station;
+use App\Models\Data;
 
 class Item extends BaseController
 {
-    public function index()
-    {
-        //
+    protected $data;
+
+    public function __construct() {
+        $this->data = new Data();
     }
 
-    public function delete($id) { //přes softdelete!!!!!
-        $article = $this->article->find($id);
-        if ($article == null) {
-            return redirect()->to('/admin')->with('error', 'Článek nebyl nalezen.');
+    public function delete($date) {
+        $data = $this->data->where('date', $date)->findAll();
+
+        if ($data === null) {
+            return redirect()->to('/')->with('error', 'Záznamy s tímto datemnebyly nalezen.');
         }
 
-        $this->article->delete($id);
-        
-        return redirect()->to("/admin")->with('success', 'Článek smazán.');
+        //$this->data->delete($id);
+        return var_dump($data);
+        //return redirect()->to('/')->with('success', 'Záznam smazán.');
+
+        //pak odkomentovat, toto je jenom pro test!!!!
     }
 }
