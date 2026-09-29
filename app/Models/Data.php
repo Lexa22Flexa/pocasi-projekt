@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class Data extends Model
 {
     protected $table            = 'data';
-    protected $primaryKey       = 'date';
+    protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
     protected $useSoftDeletes   = true;

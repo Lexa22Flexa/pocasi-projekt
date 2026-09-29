@@ -19,7 +19,7 @@
     <input type="date" class="form-control" id="smazat" name="smazat" required>
 </div>
 
-<button class="btn btn-success mb-3" style="float: right;" type="submit">Smazat</button>
+<button class="btn btn-danger mb-3" style="float: right;" type="submit">Smazat</button>
 
 <?= form_close() ?>
 
