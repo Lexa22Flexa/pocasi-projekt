@@ -20,8 +20,9 @@ class Item extends BaseController
 
 
         $date = $this->request->getPost('smazat');
+        $stationId = $this->request->getPost('station_id');
 
-        $data = $this->data->where('date', $date)->findAll();
+        $data = $this->data->where('date', $date)->where('Stations_ID', $stationId)->findAll();
 
         if ($data === null) {
             return redirect()->to('/')->with('error', 'Záznamy s tímto datemnebyly nalezen.');
@@ -34,8 +35,6 @@ class Item extends BaseController
         }
 
         return redirect()->to('/')->with('success', 'Záznam smazán.');
-
-
 
         /*if ($data === null) {
             return redirect()->to('/')->with('error', 'Záznamy s tímto datemnebyly nalezen.');

@@ -14,6 +14,8 @@
 
 <?= form_open_multipart("item/delete") ?>
 
+<input type="hidden" name="station_id" value="<?= $data[0]->Stations_ID ?>">
+
 <div class="mb-3">
     <label for="smazat" class="form-label">Smazat záznamy s datem:</label>
     <input type="date" class="form-control" id="smazat" name="smazat" required>
